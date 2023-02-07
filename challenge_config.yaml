@@ -1,7 +1,7 @@
 # If you are not sure what all these fields mean, please refer our documentation here:
 # https://evalai.readthedocs.io/en/latest/configuration.html
-title: Text Reading Challenge
-short_description: Use BLEU matrix
+title: Emotion Detection from Text
+short_description: Emotion Detection from Text short description
 description: templates/description.html
 evaluation_details: templates/evaluation_details.html
 terms_and_conditions: templates/terms_and_conditions.html
@@ -19,14 +19,22 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Bleu", "Length"],
-        "default_order_by": "Bleu",
+        "labels": ["Accuracy", "Precision", "Recall", "F1-score"],
+        "default_order_by": "Accuracy",
         "metadata": {
-          "Bleu": {
+          "Accuracy": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           },
-          "Length": {
+          "Precision": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+          "Recall": {
+            "sort_ascending": True,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          }
+          "F1-score": {
             "sort_ascending": True,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           }
